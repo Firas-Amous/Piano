@@ -84,6 +84,30 @@ $(document).on('click touchend', function(event) {
     
  });
 
+function ExecuteMouseUp(obj)
+{
+    for(i = 0; i<keys.length; i++)
+        {
+            var current = keys[i].id;
+            var desired = "#"+$(obj)[0].id;
+            
+            if(current == desired)
+                KeyUpActions(keys[i].key);
+        }
+}
+
+function ExecuteMouseDown(obj)
+{
+    for(i = 0; i<keys.length; i++)
+        {
+            var current = keys[i].id;
+            var desired = "#"+$(obj)[0].id;
+            
+            if(current == desired)
+                KeyDownActions(keys[i].key);
+        }  
+}
+
 function IsCurrentlyPlaying(event)
 {
     for(i = 0; i<keys.length; i++)
