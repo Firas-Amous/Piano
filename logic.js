@@ -115,14 +115,14 @@ function KeyDownActions(key)
                     else
                         $(keys[i].id).addClass("blackClick");
                     
-                    var x = document.getElementById(keys[i]. value); 
+                       var x = document.getElementById(keys[i]. value); 
                     
-                    x.currentTime = 0.2;
+                         x.currentTime = 0.2;
                                         
-                    x.play();
+                           x.play();
                 
                     
-                    return;
+                    return  
                 }
         }
 }
